@@ -38,9 +38,7 @@ favicon: "/img/favicon.ico"
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
-
-background-img: "../img/bg-temp.png"
+background-img: "../img/intro-bg.jpg"
 
 ##############################
 # Dynamic Text on the Header #
@@ -57,7 +55,7 @@ lines: # You can add HTML Tags in the Text
   - text: "Hi, my name is Rob."
   - text: "I make web apps, and I never stop learning."
 
-me-img: "/img/headshot_1.jpg"
+me-img: "/img/headshot_1-min.jpg"
 
 ################
 # Web app mode #
