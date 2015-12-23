@@ -28,7 +28,7 @@ force-https: True
 
 lang: "en"
 author: "Rob Wilson"
-title: "{ Rob Wilson }"
+title: "Rob Wilson - Web Developer"
 description: "Personal website of Rob Wilson. Showcasing projects and writing blog entries."
 keywords: "phobos, phobos101, node, mean, javascript"
 favicon: "/img/favicon.ico"
@@ -40,7 +40,7 @@ favicon: "/img/favicon.ico"
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: "../img/intro-bg.jpg"
+background-img: "../img/bg-temp.png"
 
 ##############################
 # Dynamic Text on the Header #
@@ -54,9 +54,8 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Hi, my name is Rob Wilson."
+  - text: "Hi, my name is Rob."
   - text: "I make web apps, and I never stop learning."
-  - text: "Check out my projects and blog, and learn with me!"
 
 me-img: "/img/headshot_1.jpg"
 
@@ -101,19 +100,19 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/spidertocat.png"
-    date: "September 2015 - Today"
+  - image: "/img/timeline/wdi16-min.jpg"
+    date: "September 2015 - December 2015"
     description: "Full time web development student at General Assembly"
-  - image: "/img/timeline/baracktocat.jpg"
+  - image: "/img/timeline/default.png"
     date: "Febuary 2015 - September 2015"
     description: "Started hobby programming in Python"
-  - image: "/img/timeline/baracktocat.jpg"
+  - image: "/img/timeline/cisco-min.jpg"
     date: "June 2013 - September 2015"
     description: "Worked for the Cisco CNG as a network support engineer"
-  - image: "/img/timeline/baracktocat.jpg"
+  - image: "/img/timeline/roadtrip-min.jpg"
     date: "May 2013 - July 2013"
     description: "Road trip down USA route 101 - Washington through to Arizona (with 2 weeks in San Francisco for job training!)"
-  - image: "/img/timeline/baracktocat.jpg"
+  - image: "/img/timeline/graduation-min.jpg"
     date: "September 2009 - May 2013"
     description: "4 years at Staffordshire University"
 
@@ -151,6 +150,7 @@ social:
 
 pages_list:
   About: 'about'
+  Projects: 'projects'
   Blog: 'latest-post'
   Timeline: 'timeline'
   Contact: 'contact'
