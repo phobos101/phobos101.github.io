@@ -2,16 +2,15 @@
 layout: post
 section-type: post
 title: It's a bit iffy
-category: Tech
-tags: [ 'tutorial', 'JavaScript' ]
+excerpt: A huge topic for a beginner coder is the topic of functions. This blog post will go over what a function is, how to call them and how to create an IIFE.
 ---
 
 ### It's a bit iffy...
 
 A huge topic for a beginner coders is the topic of functions. Some common questions I have seen regarding functions include:
-* Why are they needed?
-* I've written a function but nothing is happening!
-* What is the difference between a function and a method?
+- Why are they needed?
+- I've written a function but nothing is happening!
+- What is the difference between a function and a method?
 
 I will aim to cover all these and more as we talk though what a function is and why they are so useful.
 
