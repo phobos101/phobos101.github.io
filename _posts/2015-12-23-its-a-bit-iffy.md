@@ -9,9 +9,9 @@ excerpt: A huge topic for a beginner coder is the topic of functions. This blog 
 
 A huge topic for a beginner coders is the topic of functions. Some common questions I have seen regarding functions include:
 
-- Why are they needed?
-- I've written a function but nothing is happening!
-- What is the difference between a function and a method?
+* Why are they needed?
+* I've written a function but nothing is happening!
+* What is the difference between a function and a method?
 
 I will aim to cover all these and more as we talk though what a function is and why they are so useful.
 
@@ -60,6 +60,7 @@ calculate(10, 20, 'add');
 </code></pre>
 
 The above function has the following benefits:
+
 * We can call this function anytime we want or when some condition is met.
 * If we need to alter the code, we only alter it in ONE place (the function) as opposed to finding multiple lines dotted around our program to alter.
 * We can now use a single line to calculate either adding or subtracting any two numbers.
