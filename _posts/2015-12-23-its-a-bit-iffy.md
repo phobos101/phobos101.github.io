@@ -8,6 +8,7 @@ excerpt: A huge topic for a beginner coder is the topic of functions. This blog 
 ### It's a bit iffy...
 
 A huge topic for a beginner coders is the topic of functions. Some common questions I have seen regarding functions include:
+
 - Why are they needed?
 - I've written a function but nothing is happening!
 - What is the difference between a function and a method?
@@ -65,7 +66,7 @@ The above function has the following benefits:
 
 ### Call story bro
 
-It's also really important to understand that just because we have **written** the function, it does not mean that it will run. You must **call** the function in order to run it. To call the function, you simply write the name of the function and pass in any arguments or parameters. If the function takes no arguments then just don't pass any in :smile:
+It's also really important to understand that just because we have **written** the function, it does not mean that it will run. You must **call** the function in order to run it. To call the function, you simply write the name of the function and pass in any arguments or parameters. If the function takes no arguments then just don't pass any in. :smile:
 
 <pre><code data-trim class="javascript">
 calculate(10, 20, 'add');
@@ -78,9 +79,28 @@ calculate();
 
 In many programs (including the example in the previous section) you will see functions that are immediately followed by a call for that function. This is not a bad thing, as it means the function is defined and run, and can be called again in the future at any time.
 
+### Methods vs Functions
+
+A method is simply a function that is written inside an **object**. You can therefore call an objects function (method) using something called dot notation, and chances are you have done this before! Check the below example:
+
+<pre><code data-trim class="javascript">
+var person = {
+  // New person object
+  firstName: 'Robert',
+  lastName: 'Wilson',
+  fullName: function() {
+    return this.firstName + ' ' + this.lastName;
+  };
+};
+
+var name = person.fullName()
+</code></pre>
+
+As you can see, the 'fullName' property is just a normal function! But becuase it is written in an object it is known as a method. When we get the value of 'name' it calls the function using dot notation and will get the value 'Robert Wilson'.
+
 ### What an IIFE is and is not
 
-There is also an elegant way to invoke a function immediately after creation, and we refer to these as IIFEs or Immediately Invoked Function Expression. The way to write an IIFE is to pre-pend the function with an open parenthesis, and at the end of the function, close the parenthesis, followed by calling the function on the same line.
+There is an elegant way to invoke a function immediately after creation, and we refer to these as IIFEs or Immediately Invoked Function Expressions. The way to write an IIFE is to pre-pend the function with an open parenthesis, and at the end of the function, close the parenthesis, followed by calling the function on the same line.
 
 <pre><code data-trim class="javascript">
 (function(a, b) {
