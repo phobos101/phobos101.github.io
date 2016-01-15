@@ -66,20 +66,12 @@ That final else, is only executed if all previous conditions are falsey, and it 
 Logic gates are a fancy way of telling us if an expression is truthy or falsey when there is more than one condition in that expression. If I said, 'Is five higher than ten?' this is **falsey**, but if I said, 'Is five higher than ten, *or* one' then this is **truthy**.
 
 ##### AND
-The table below shows the AND logic gate. 1 = **true**, 0 = **false**:
-| A | B | C |
-|:-:|---|---|
-| 1 | 1 | 1 |
-| 1 | 0 | 0 |
-| 0 | 1 | 0 |
-| 0 | 0 | 0 |
+The AND gate will ensure that both sides of are true. If either side of the AND is false then the result is false. Below we see the AND logic gate. 1 = **true**, 0 = **false**:
 
-true AND true = true
-true AND false = false
-false AND true = false
-false AND false = false
-
-Both sides must be true to evaluate to truthy.
+- true AND true = true
+- true AND false = false
+- false AND true = false
+- false AND false = false
 
 <pre><code data-trim class="javascript">
 if (1 < 2 && 2 < 3) {
@@ -92,25 +84,33 @@ if (1 < 2 && 2 > 3) {
 }
 </code></pre>
 
+When using JavaScript, the AND gate is denoted with the double ampersand (&&).
+
 ##### OR
-The table below shows the OR logic gate. 1 = **true**, 0 = **false**:
-| A | B | C |
-|:-:|---|---|
-| 1 | 1 | 1 |
-| 1 | 0 | 1 |
-| 0 | 1 | 1 |
-| 0 | 0 | 0 |
+The OR gate states that one *or* the other must be true to evaluate to true. Below we can see the OR logic gate. 1 = **true**, 0 = **false**:
 
-true AND true = true
-true AND false = true
-false AND true = true
-false AND false = false
+- true OR true = true
+- true OR false = true
+- false OR true = true
+- false OR false = false
 
-Either side can be true to evaluate to truthy.
+<pre><code data-trim class="javascript">
+if (1 > 2 || 2 < 1) {
+  // this is false and will be ignored
+}
+
+if (1 === 2 || 2 > 3) {
+  // this is true because the right hand side is true
+}
+</code></pre>
+
+When using JavaScript, the OR gate is denoted with the double pipe (||).
 
 ##### NOT
 The not logic gate simply converts a truthy value to falsey and vise versa. E.g not true is equal to false.
 Similarly *not 10 > 5* is equal to false, because 10 > 5 is true, but then put through the not logic to make it false.
+
+When using JavaScript, the NOT gate is denoted with the exclamation mark, or bang (!).
 
 #### Advanced code using boolean logic
 As we saw earlier, we can use conditional *if* statements to direct the flow of our program. There is also a special bit of code called a **ternary** we can use to act upon if something is either truthy or falsey. As such, this code is not useful if there are many conditions that require *else if* statements.
@@ -147,3 +147,10 @@ console.log(!!somethingTrue);
 </code></pre>
 
 The above code will print *true* to the console! You can use this in your code to direct the flow of your program also.
+
+##### Shortcuts
+One more thing to keep in mind, is that both the AND gate and OR gate is capable of performing shortcuts. This means it can know if the result is true or false by looking only at the first side of the gate!
+
+If we had `false && true` then by seeing the false on the left, then the AND gate knows that the result is impossible to be true no matter what the right hand side is. Therefore it will end it's computation and give you the result immediately.
+
+Similarly, if you had `true OR false` then because the OR gate can already see that one side is true, then it knows the end result will always be true no matter what is on the other side.  
